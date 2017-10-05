@@ -1,0 +1,4 @@
+﻿  Source1.cpp
+Source1.obj : error LNK2005: "void __cdecl pause(void)" (?pause@@YAXXZ) already defined in Source.obj
+Source1.obj : error LNK2005: _main already defined in Source.obj
+C:\Users\234294\Desktop\CSCi 1\Project1\Debug\Project1.exe : fatal error LNK1169: one or more multiply defined symbols found
