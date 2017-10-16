@@ -17,27 +17,30 @@ void pause() {
 }
 // MAIN
 void main() {
+	void main() {
+	for (int i; i = 1; i < 31) {
 	int x;
 	cout << "Please type in a three digit number. ";
-	cin >> x; // the 3 digit number
-	int C = x % 10;
-	int B = (x / 10) % 10;
-	int A = (x / 100) % 10;
-	bool ascending = A != B && B != C;
-	bool descending = ascending;
-	if (A > B)
-		ascending = false;
-	else
-		descending = false;
-	if (B > C)
-		ascending = false;
-	else
-		descending = false;
-	if (ascending)
-		cout << "Ascending \n";
-	else if (descending)
-		cout << "Descending \n";
-	else
-		cout << "Neither \n";
-	pause();
+	cin >> x;
+		int C = x % 10;
+		int B = (x / 10) % 10;
+		int A = (x / 100) % 10;
+		bool ascending = A != B && B != C;
+		bool descending = ascending;
+		if (A > B)
+			ascending = false;
+		else
+			descending = false;
+		if (B > C)
+			ascending = false;
+		else
+			descending = false;
+		if (ascending)
+			cout << x << " is ascending \n";
+		else if (descending)
+			cout << x << " is descending \n";
+		else
+			cout << x << " is neither ascending nor descending \n";
+		_getch();
+	}
 }
