@@ -20,6 +20,7 @@ void main() {
 	void main() {
 	for (int i; i = 1; i < 31) {
 	int x;
+// Displays text
 	cout << "Please type in a three digit number. ";
 	cin >> x;
 		int C = x % 10;
@@ -36,11 +37,11 @@ void main() {
 		else
 			descending = false;
 		if (ascending)
-			cout << x << " is ascending \n";
+			cout << " The number " << x << " is ascending \n";
 		else if (descending)
-			cout << x << " is descending \n";
+			cout << " The number " << x << " is descending \n";
 		else
-			cout << x << " is neither ascending nor descending \n";
+			cout << " The number " << x << " is neither ascending nor descending \n";
 		_getch();
 	}
 }
