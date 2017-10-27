@@ -18,7 +18,7 @@ void pause() {
 }
 // MAIN
 void main() {
-	void main() {
+	void main() { 
 	for (int i; i = 1; i < 31) {
 	int x;
 // Displays text
