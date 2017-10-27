@@ -48,5 +48,5 @@ void main() {
 			cout << " The number " << x << " is neither ascending nor descending \n";
 		// Pause statement
 		_getch();
-	}
+	} 
 }
