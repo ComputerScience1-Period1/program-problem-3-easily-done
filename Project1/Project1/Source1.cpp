@@ -3,12 +3,13 @@ Christopher Hartsfield and Jaren Duffield - October 4 2017 1
 Program Problem 3
 Create a New Project to classify weather a given number is ascending ot descending
 */
+
 //Libraries
 #include <iostream> // gives access to cin, cout, endl, <<, >>, boolalpha, noboolalpha
 #include <conio.h> // gives access to _kbhit() and _getch() for pause()
 // Namespaces
-using namespace std; //*
-					 // Functions() 
+using namespace std;
+// Functions() 
 void pause() {
 	cout << "Press any key to continue . . .";
 	while (!_kbhit());
@@ -22,12 +23,15 @@ void main() {
 	int x;
 // Displays text
 	cout << "Please type in a three digit number. ";
+// Allows input of text
 	cin >> x;
+		// Defining variables
 		int C = x % 10;
 		int B = (x / 10) % 10;
 		int A = (x / 100) % 10;
 		bool ascending = A != B && B != C;
 		bool descending = ascending;
+		// Putting variables into the correct order
 		if (A > B)
 			ascending = false;
 		else
@@ -42,6 +46,7 @@ void main() {
 			cout << " The number " << x << " is descending \n";
 		else
 			cout << " The number " << x << " is neither ascending nor descending \n";
+		// Pause statement
 		_getch();
 	}
 }
